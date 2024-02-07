@@ -1,6 +1,6 @@
 [tool.poetry]
-name = "basic-python-stress-test"
-version = "0.1.0"
+name = "basic-python-benchmarker"
+version = "1.0.0"
 description = ""
 authors = ["Kokonico <kokonico@duck.com>"]
 readme = "README.md"
