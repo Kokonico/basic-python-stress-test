@@ -37,7 +37,12 @@ def main():
   """main function"""
   # stress test
   score, avg, list = stress()
-  os.system('cls' if os.name == 'nt' else 'clear')
+  # check for term variable
+  if "TERM" in os.environ:
+    os.system('cls' if os.name == 'nt' else 'clear')
+  else:
+    print("\n" * 100)  # backup plan
+  # print results
   print(f"score: {score}, avg: {avg}")
 
 if __name__ == "__main__":
